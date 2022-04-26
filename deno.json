@@ -1,0 +1,8 @@
+{
+  "importMap": "./importMap.json",
+  "lint": {
+    "rules": {
+      "include": ["no-undef"]
+    }
+  }
+}
