@@ -11,6 +11,11 @@ function calcularPromedio(notas) {
     Retorno:
       * Promedio de tipo number
   */
+  const sum = notas.reduce(function (acumulador, elemento) {
+    return acumulador + elemento; 
+    
+  }, 0);
+ return sum / notas.length;
 }
 
 export { calcularPromedio };

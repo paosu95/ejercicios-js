@@ -32,6 +32,15 @@ function horaFutura(horaActual, cantidadDeHoras) {
     Retorno:
       * Un mensaje diciendo la cantidad de horas y la nueva hora en el formato antes mencionado de tipo string
   */
+
+  let nuevaHora = horaActual;
+  for (let i = 0; i < cantidadDeHoras; i++) {
+    if (nuevaHora === 24) {
+      nuevaHora = 0;
+    }
+    nuevaHora++;
+  }
+  return "En " + cantidadDeHoras + " horas" + "," + " el reloj marcará las " + nuevaHora;
 }
 
 export { horaFutura };

@@ -16,6 +16,7 @@ function pitagoras(a, b) {
     Retorno:
       * Hipotenusa de tipo number
   */
+ return Math.hypot(a,b)
 }
 
 export { pitagoras };

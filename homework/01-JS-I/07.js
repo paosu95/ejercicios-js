@@ -19,6 +19,12 @@ function parteDecimal(numeroReal) {
     Retorno:
       * Parte decimal de tipo number
   */
+ 
+ numeroReal = Math.abs(numeroReal)
+ 
+ const numeroDecimal = numeroReal - Math.floor(numeroReal);
+ return numeroDecimal;
+
 }
 
 export { parteDecimal };

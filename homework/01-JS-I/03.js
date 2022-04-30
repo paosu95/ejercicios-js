@@ -13,6 +13,8 @@ function centimetrosAPulgadas(longitud) {
     Retorno:
       * Pulgadas de tipo number
   */
+  const nuevaLongitud = longitud / 2.54;
+  return nuevaLongitud;
 }
 
 export { centimetrosAPulgadas };

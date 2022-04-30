@@ -15,6 +15,8 @@ function numeroInvertido(numero) {
     Retorno:
       * Número invertido de tipo number
   */
+  const nuevoNumero = numero.toString().split("").reverse().join("");
+  return Number(nuevoNumero);
 }
 
 export { numeroInvertido };

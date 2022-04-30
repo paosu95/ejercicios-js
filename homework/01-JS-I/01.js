@@ -11,6 +11,11 @@ function areaCirculo(radio) {
     Retorno:
       * Área del radio de tipo number
   */
+ const pi = Math.PI;
+ return pi * radio * radio;
+
+ 
+
 }
 
 /**
@@ -26,6 +31,10 @@ function perimetroCirculo(radio) {
     Retorno:
       * Perímetro del radio de tipo number
   */
+ const pi = Math.PI
+
+ return pi *radio *2;
+ 
 }
 
 export { areaCirculo, perimetroCirculo };
