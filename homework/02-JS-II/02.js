@@ -40,6 +40,16 @@ function sumarRango(numero1, numero2) {
       Retorno:
         * La suma del rango de tipo number
     */
+
+      if(numero1 < numero2){  // 2       //5        // 2345= 14
+        return sumarRango(numero1 + 1, numero2) + numero1;
+      }else if(numero1 === numero2){
+        return numero1
+      }
+
+      if(numero1 > numero2){
+        return sumarRango(numero1, numero2 + 1) + numero2;
+      }
 }
 
 export { sumarRango };

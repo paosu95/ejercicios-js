@@ -14,6 +14,11 @@ function esPalindromo(str) {
     Retorno:
       * Un boolean indicando si es o no un palindromo
   */
+ if(str.length === 1){
+  return true;
+ }
+ return str.at(0) === str.at(-1) && esPalindromo(str.slice(1,-1));
+
 }
 
 export { esPalindromo };
